@@ -26,8 +26,13 @@ my_role/
 ```
 ansible-galaxy --version
 ```
+3. Creates a role's base structure by making directories and main.yml files
 
-3. Push Your Role to GitHub
+---
+ansible-galaxy role init <name of the role>
+---
+
+4. Push Your Role to GitHub
 
 ```
 cd <role-name>
@@ -38,7 +43,7 @@ git commit -m "Initial commit"
 git push -u origin main
 ```
 
-4. Import the Role to Ansible Galaxy
+5. Import the Role to Ansible Galaxy
 
 ```
 ansible-galaxy role import <your_github_username> <role-name>
